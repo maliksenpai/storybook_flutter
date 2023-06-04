@@ -234,6 +234,22 @@ class KnobsNotifier extends ChangeNotifier implements KnobsBuilder {
       ).toInt();
 
   @override
+  VoidCallback functionButton({
+    required String label,
+    required VoidCallback? value,
+    String? description,
+  }) =>
+      _addKnob(
+        Knob(
+          label: label,
+          description: description,
+          knobValue: FunctionKnobValue(
+            value: value,
+          ),
+        ),
+      );
+
+  @override
   void dispose() {
     _storyNotifier.removeListener(_onStoryChanged);
     super.dispose();

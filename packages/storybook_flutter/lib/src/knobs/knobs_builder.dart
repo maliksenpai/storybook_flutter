@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:storybook_flutter/src/knobs/select_knob.dart';
 
 /// {@template knobs_builder}
@@ -58,6 +60,12 @@ abstract class KnobsBuilder {
     int max = 100,
     int min = 0,
     int divisions = 100,
+  });
+
+  VoidCallback functionButton({
+    required String label,
+    required VoidCallback? value,
+    String? description,
   });
 
   /// Creates select field with [label], [description], [initial] value and

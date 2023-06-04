@@ -2,6 +2,7 @@ export 'bool_knob.dart';
 export 'knob.dart';
 export 'knob_value.dart';
 export 'knobs_builder.dart';
+export 'knobs_function.dart';
 export 'nullable_knob.dart';
 export 'select_knob.dart';
 export 'slider_knob.dart';

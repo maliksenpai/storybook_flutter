@@ -42,6 +42,7 @@ class _SearchTextFieldState extends State<SearchTextField> {
                     },
                   )
                 : null,
+            hintText: 'Search',
           ),
           textInputAction: TextInputAction.search,
           onChanged: (String value) {
